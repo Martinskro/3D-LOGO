@@ -1,0 +1,316 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex; /* Bruk flex layout */
+    justify-content: space-between; /* Plasser elementene på venstre og høyre side */
+    align-items: center; /* Sentrer innhold vertikalt */
+    background-color: #fefefe;
+    color: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Host Grotesk', sans-serif;
+}
+
+.navbar-text {
+    margin-left: 50px;
+}
+
+.navbar-buttons {
+    display: flex; /* Bruk flex for knappene */
+    gap: 15px; /* Mellomrom mellom knappene */
+    margin-right: 50px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #0054ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Host Grotesk', sans-serif;
+}
+
+.nav-btn:hover {
+    background-color: #00c0ff;
+}
+
+.section1 {
+    height: 600px;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.animated-webp {
+    width: 50%; /* Adjust size as needed */
+    max-width: 400px; /* Adjust maximum width as needed */
+    height: auto;
+    margin-right: 8%; /* Adjust margin for positioning */
+}
+
+.text-container {
+    width: 45%; /* Adjust width as needed */
+    margin-left: 8%;
+}
+
+.text-container h1 {
+    margin: 0 0 10px;
+    font-family: 'Host Grotesk', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 100%;
+}
+
+.text-container p {
+    margin: 20px 0 20px 0;
+    font-family: 'Host Grotesk', sans-serif;
+}
+
+.big-container {
+    margin-top: 20px; /* Space between the text and the button-textbox-container */
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 15px;
+    background-color: #ffffff; /* Light background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Equal shadow around the whole box */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: stretch; /* Make child elements fill the width */
+    gap: 10px; /* Space between child elements */
+    text-align: center;
+}
+
+.button-textbox-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start */
+    gap: 10px; /* Adds space between the button and the textbox */
+    width: 100%; /* Make sure it fills the container */
+}
+
+.btn, .textbox {
+    flex: 1; /* Allow the button and textbox to expand */
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: white;
+    background-color: #0054ff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Host Grotesk', sans-serif;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #00c0ff;
+}
+
+.textbox {
+    display: inline-block;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #f7f7f7; /* Light background */
+}
+
+.textbox p {
+    margin: 3px 0; /* Space between lines */
+    font-size: 16px; /* Adjust font size as needed */
+    font-family: 'Host Grotesk', sans-serif;
+    line-height: 100%;
+}
+
+.additional-text {
+    margin-top: 5px; /* Space above the text */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #555;
+    font-family: 'Host Grotesk', sans-serif;
+}
+
+.section2 {
+    background: linear-gradient(to top right, #00c0ff, #0054ff);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px; /* Uniform padding */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width for proper centering */
+}
+
+.section-title {
+    margin: 0; /* Remove standard margin */
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-family: 'Host Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    gap: 30px; /* Space between boxes */
+    width: 100%;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.box {
+    background-color: #fefefe;
+    flex: 1 1 220px; /* Responsive resizing */
+    min-width: 180px;
+    max-width: 300px; /* Narrower maximum size */
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start content from top */
+    align-items: flex-start; /* Align items to the left */
+    text-align: left;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: row; /* Align image and text horizontally */
+    align-items: flex-start; /* Align items at the top */
+    width: 100%; /* Full width of the content */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box-image {
+    width: 40px; /* Smaller width for the image */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between the image and text */
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+}
+
+.box-header {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Host Grotesk', sans-serif;
+}
+
+.box-description {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: 'Host Grotesk', sans-serif;
+}
+
+.section3, .section4 {
+    background-color: #fefefe;
+    height: 500px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space between image and text */
+    padding: 20px; /* Adds space inside the section */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Space between image and text */
+}
+
+.section3 .content-container {
+    flex-direction: row; /* Text on the left, image on the right */
+}
+
+.section4 .content-container {
+    flex-direction: row; /* Image on the left, text on the right */
+}
+
+.text-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+}
+
+.section-header {
+    margin: 0 0 10px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Host Grotesk', sans-serif;
+    font-weight: 900;
+    line-height: 100%;
+}
+
+.section-description {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    font-family: 'Host Grotesk', sans-serif;
+    font-weight: 400;
+}
+
+.section-image {
+    width: 550px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: rounds corners */
+}
+
+.sticky-button {
+    position: fixed;
+    bottom: -100px; /* Hidden by default */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0054ff;
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 30px; /* Pill shape */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1000; /* Ensure it stays on top */
+    font-family: 'Host Grotesk', sans-serif;
+    font-weight: 600;
+}
+
+.sticky-button.show {
+    bottom: 20px; /* Visible state */
+}
+
+.sticky-button:hover {
+    background-color: #00c0ff; /* Change background color on hover */
+}
