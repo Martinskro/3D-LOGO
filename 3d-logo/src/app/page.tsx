@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LogoSpinner from "@/components/LogoSpinner";
+import LogoSpinner from "../components/LogoSpinner";
 
 export default function Home() {
   return (
