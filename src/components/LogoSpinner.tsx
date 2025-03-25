@@ -51,6 +51,7 @@ export default function LogoSpinner({ imageUrl, isSpinning, onSpinComplete }: Lo
             alt="Spinning Logo"
             fill
             className="object-contain rounded-lg"
+            unoptimized
           />
         </div>
       </div>
