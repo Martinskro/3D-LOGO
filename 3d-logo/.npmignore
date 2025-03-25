@@ -1,0 +1,4 @@
+# Include configuration files
+!.npmrc
+!.eslintrc*
+!tsconfig.json 
